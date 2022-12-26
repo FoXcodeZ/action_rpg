@@ -5,13 +5,12 @@
 // ======================================================================
 
 import {LeafData} from "./leaf.data.js";
-import {Display} from "./leaf.js";
 
 // Helper function
 function resize(event) {
-    Display.resizeCanvas();
+    LeafDisplay.instance.resizeCanvas();
     // @TODO clearScreen is temporary only.
-    Display.clearScreen();
+    LeafDisplay.instance.clearScreen();
 }
 
 export class LeafDisplay {
