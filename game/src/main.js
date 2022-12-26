@@ -6,14 +6,14 @@
 //
 // const engine = new Engine(1000/30, init, render, update, release);
 
-import {Data} from "../../engine/src/leaf.js";
-import {Display} from "../../engine/src/leaf.js";
+import {data} from "../../engine/src/leaf.js";
+import {display} from "../../engine/src/leaf.js";
 
 
 window.onload = function() {
-    Display.init();
-    Display.clearScreen();
-    Data.loadImage('player', 'player.png', 10, 10).then( () => {
-        Display.drawImage('player', 20, 20, 150, 150);
+    display.init();
+    display.clearScreen();
+    data.loadImage('player', 'player.png', 10, 10).then( () => {
+        display.drawImage('player', 20, 20, 150, 150);
     });
 }
